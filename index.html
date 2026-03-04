@@ -1,221 +1,200 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <title>Durairaju K | Senior Product Manager</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' }
-  </script>
+<meta charset="UTF-8">
+<title>Durairaju K | Senior Product Leader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class' }
+</script>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<style>
+body { font-family: ui-sans-serif, system-ui; }
+@media print {
+  .no-print { display: none; }
+  body { background: white; color: black; }
+}
+</style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition duration-500">
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-200 transition duration-500">
 
-<!-- DARK MODE TOGGLE -->
-<div class="fixed top-5 right-5">
-  <button onclick="document.documentElement.classList.toggle('dark')" 
-    class="px-4 py-2 bg-black text-white dark:bg-white dark:text-black rounded text-sm shadow">
-    Toggle Mode
-  </button>
+<script>
+window.onload = () => { AOS.init({ once: true }); }
+</script>
+
+<!-- DARK MODE BUTTON -->
+<button onclick="document.documentElement.classList.toggle('dark')"
+class="fixed top-6 right-6 z-50 bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-full text-sm shadow-lg no-print">
+Toggle Theme
+</button>
+
+<div class="flex max-w-7xl mx-auto">
+
+<!-- STICKY LEFT NAV -->
+<nav class="hidden md:block w-60 h-screen sticky top-0 p-8 border-r border-gray-300 dark:border-gray-700 no-print">
+<h2 class="text-xl font-bold mb-8">Durairaju K</h2>
+<ul class="space-y-4 text-sm">
+<li><a href="#about" class="hover:underline">About</a></li>
+<li><a href="#experience" class="hover:underline">Experience</a></li>
+<li><a href="#case" class="hover:underline">Case Studies</a></li>
+<li><a href="#education" class="hover:underline">Education</a></li>
+<li><a href="#courses" class="hover:underline">Courses</a></li>
+</ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="flex-1 px-6 md:px-16 py-14">
+
+<!-- HERO -->
+<section id="about" data-aos="fade-up">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight">Durairaju K</h1>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+Senior Product Manager | Marketplace & Logistics Platforms
+</p>
+
+<div class="mt-4 text-sm">
+Bengaluru, India • durairaj6893@gmail.com • 9791725973
 </div>
 
-<!-- HEADER -->
-<section class="max-w-6xl mx-auto px-6 py-14 text-center border-b border-gray-300 dark:border-gray-700">
-  <h1 class="text-4xl md:text-5xl font-bold tracking-wide">DURAIRAJU K</h1>
-  <p class="mt-4 text-lg">
-    Senior Product Manager | Marketplace & Logistics Platforms
-  </p>
-  <p class="mt-2 text-sm">
-    Bengaluru, India | durairaj6893@gmail.com | 9791725973 |
-    <a href="https://linkedin.com/in/durairaju" target="_blank" class="underline">LinkedIn</a>
-  </p>
-
-  <div class="mt-6">
-    <a href="Durairaju_SPM_Resume.pdf" download
-       class="px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded">
-       Download Resume (PDF)
-    </a>
-  </div>
+<div class="mt-6">
+<a href="Durairaju_SPM_Resume.pdf" download
+class="px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded no-print">
+Download PDF
+</a>
+</div>
 </section>
 
-<!-- EXECUTIVE SUMMARY -->
-<section class="max-w-6xl mx-auto px-6 py-10 border-b border-gray-300 dark:border-gray-700">
-  <h2 class="text-xl font-bold mb-4 tracking-wide">EXECUTIVE SUMMARY</h2>
-  <p class="leading-relaxed">
-Senior Product Manager with 9+ years of experience across B2B/B2C marketplaces, logistics platforms, and founder-led product development. Strong expertise in AI-assisted product discovery, rapid prototyping, and marketplace optimization. Proven ability to translate customer pain points into scalable systems, optimize infrastructure costs, and align cross-functional teams to deliver measurable business impact.
-  </p>
-</section>
+<!-- EXPERIENCE -->
+<section id="experience" class="mt-20" data-aos="fade-up">
+<h2 class="text-2xl font-bold mb-10">LetsTransport</h2>
 
-<section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-4 gap-12">
+<div class="flex items-center mb-6">
+<a href="https://letstransport.in/" target="_blank">
+<img src="assets/logos/letstransport.png" class="w-12 h-12 mr-4">
+</a>
+<div>
+<p class="font-semibold text-lg">Product Leadership Journey</p>
+<a href="https://letstransport.in/" target="_blank" class="text-sm underline">letstransport.in</a>
+</div>
+</div>
 
-<!-- LEFT COLUMN -->
-<div class="col-span-4 md:col-span-3">
-
-<h2 class="text-xl font-bold mb-8 tracking-wide">PROFESSIONAL EXPERIENCE</h2>
+<!-- Timeline -->
+<div class="border-l-2 border-gray-300 dark:border-gray-600 pl-6 space-y-12">
 
 <!-- Senior PM -->
-<div class="mb-12">
-<div class="flex items-center mb-4">
-<a href="https://letstransport.in/" target="_blank">
-<img src="assets/logos/letstransport.png" class="w-12 h-12 mr-4 object-contain">
-</a>
-<h3 class="font-semibold text-lg">
-Senior Product Manager –
-<a href="https://letstransport.in/" target="_blank" class="underline">
-LetsTransport
-</a>
-(Apr 2024 – Present)
-</h3>
-</div>
-
-<ul class="list-disc pl-8 space-y-2 text-sm">
-<li>Led launch of dual-app logistics marketplace platform Loadster; scaled to 10K+ drivers and 5K+ users within 6 months.</li>
-<li>Solved major cost-scaling issue by optimizing routing workflows, driving 99%+ reduction in Google Maps API usage.</li>
-<li>Reduced dependency on real-time routing achieving 100x drop in mapping API calls.</li>
-<li>Built real-time tracking and payment visibility systems improving partner adoption by 15%.</li>
-<li>Leveraged AI-assisted prototyping tools (Figma Make, Stitch).</li>
-<li>Built MVPs using V0 and Lovable before engineering scale-up.</li>
-<li>Used Supabase and GitLab CI/CD for streamlined deployments.</li>
+<div data-aos="fade-up">
+<h3 class="font-semibold text-lg">Senior Product Manager (Apr 2024 – Present)</h3>
+<ul class="list-disc pl-6 mt-3 text-sm space-y-2">
+<li>Launched Loadster dual-app marketplace platform (10K+ drivers, 5K+ users in 6 months).</li>
+<li>Reduced Google Maps API cost by 99% via routing re-architecture.</li>
+<li>Built real-time tracking & payment transparency systems.</li>
+<li>Led AI-assisted prototyping & MVP builds using V0 and Supabase.</li>
 </ul>
 
-<!-- App Links -->
 <div class="mt-4 text-sm space-y-1">
 <p class="font-semibold">Applications:</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.loadster.customer" target="_blank" class="underline">Loadster (Android)</a></p>
-<p><a href="https://apps.apple.com/in/app/loadster-logistics-service/id6745955520" target="_blank" class="underline">Loadster (iOS)</a></p>
-<p><a href="https://play.google.com/store/apps/details?id=com.loadster.champion" target="_blank" class="underline">Loadster Champion App</a></p>
-<p><a href="https://play.google.com/store/apps/details?id=in.letstransport.supply" target="_blank" class="underline">LetsTransport Partner App</a></p>
+<a href="https://play.google.com/store/apps/details?id=com.loadster.customer" target="_blank" class="underline block">Loadster – Android</a>
+<a href="https://apps.apple.com/in/app/loadster-logistics-service/id6745955520" target="_blank" class="underline block">Loadster – iOS</a>
+<a href="https://play.google.com/store/apps/details?id=com.loadster.champion" target="_blank" class="underline block">Loadster Champion App</a>
+<a href="https://play.google.com/store/apps/details?id=in.letstransport.supply" target="_blank" class="underline block">LetsTransport Partner App</a>
 </div>
-
 </div>
 
 <!-- Growth PM -->
-<div class="mb-12">
-<div class="flex items-center mb-4">
-<img src="assets/logos/letstransport.png" class="w-12 h-12 mr-4 object-contain">
-<h3 class="font-semibold text-lg">
-Growth Product Manager – LetsTransport (Jul 2021 – Mar 2024)
-</h3>
-</div>
-
-<ul class="list-disc pl-8 space-y-2 text-sm">
-<li>Built Order Management System reducing unbilled DSO by 20 days.</li>
-<li>Created pricing model improving win rate by 23%.</li>
-<li>Improved partner activation from 34% to 65%.</li>
-<li>Built automated MIS using Android Fused Location Provider (FLP) and haversine distance computation with fraud safeguards.</li>
+<div data-aos="fade-up">
+<h3 class="font-semibold text-lg">Growth Product Manager (Jul 2021 – Mar 2024)</h3>
+<ul class="list-disc pl-6 mt-3 text-sm space-y-2">
+<li>Built Order Management System reducing DSO by 20 days.</li>
+<li>Improved win rate by 23% via pricing optimization.</li>
+<li>Increased partner activation from 34% → 65%.</li>
+<li>Built automated FLP-based tracking MIS system.</li>
 </ul>
 </div>
 
-<!-- Case Studies -->
-<div class="mb-12">
-<h2 class="text-xl font-bold mb-6 tracking-wide">SELECTED CASE STUDIES</h2>
+</div>
+</section>
 
-<div class="mb-6">
-<h3 class="font-semibold">Loadster Marketplace Scale</h3>
-<p class="text-sm mt-2">
-Built dual-app marketplace architecture solving two-sided supply-demand imbalance. Designed activation loops and operational visibility systems resulting in 10K+ drivers and 5K+ users within 6 months.
-</p>
+<!-- CASE STUDIES -->
+<section id="case" class="mt-20" data-aos="fade-up">
+<h2 class="text-2xl font-bold mb-6">Selected Case Studies</h2>
+
+<div class="space-y-8 text-sm">
+<div>
+<h3 class="font-semibold">Marketplace Scaling – Loadster</h3>
+<p>Built dual-sided logistics marketplace architecture solving supply-demand imbalance and activation loops.</p>
 </div>
 
 <div>
-<h3 class="font-semibold">99% Google Maps Cost Optimization</h3>
-<p class="text-sm mt-2">
-Re-architected routing workflows by removing heavy real-time API dependency. Achieved 100x reduction in mapping API calls and 99%+ infrastructure cost savings.
-</p>
+<h3 class="font-semibold">99% Cost Optimization – Google Maps</h3>
+<p>Reduced mapping API calls by 100x through routing redesign and batch logic architecture.</p>
 </div>
 </div>
+</section>
 
-<!-- Webboombaa -->
-<div>
+<!-- WEBBOOMBAA -->
+<section class="mt-20" data-aos="fade-up">
+<h2 class="text-2xl font-bold mb-6">Webboombaa</h2>
+
 <div class="flex items-center mb-4">
 <a href="https://webboombaa.com/" target="_blank">
-<img src="assets/logos/webboombaa.png" class="w-12 h-12 mr-4 object-contain">
+<img src="assets/logos/webboombaa.png" class="w-12 h-12 mr-4">
 </a>
-<h3 class="font-semibold text-lg">
-Co-Founder & Head of Product –
-<a href="https://webboombaa.com/" target="_blank" class="underline">
-Webboombaa
-</a>
-(Jun 2016 – Jun 2021)
-</h3>
+<div>
+<h3 class="font-semibold">Co-Founder & Head of Product (2016 – 2021)</h3>
+<a href="https://webboombaa.com/" target="_blank" class="text-sm underline">webboombaa.com</a>
+</div>
 </div>
 
-<ul class="list-disc pl-8 space-y-2 text-sm">
-<li>Scaled product marketing agency to ₹3 Cr ARR and led acquisition.</li>
-<li>Built MVPs and scaled user activation & retention across clients.</li>
-<li>Led marketing campaigns across 15+ industries.</li>
-<li>Managed cross-functional team of 15 across Product, Marketing & Sales.</li>
+<ul class="list-disc pl-6 text-sm space-y-2">
+<li>Scaled agency to ₹3 Cr ARR; led acquisition.</li>
+<li>Built MVP growth loops across 15+ industries.</li>
+<li>Managed 15-member cross-functional team.</li>
 </ul>
-</div>
-
-</div>
-
-<!-- RIGHT COLUMN -->
-<div class="col-span-4 md:col-span-1 space-y-10">
-
-<div>
-<h3 class="font-bold mb-4 tracking-wide">EDUCATION</h3>
-
-<div class="flex items-center mb-3">
-<img src="assets/logos/sairam.png" class="w-8 h-8 mr-3 object-contain">
-<p class="text-sm">
-MBA (Marketing & Operations) – Sairam Institute of Management Studies (2015–2017)
-</p>
-</div>
-
-<div class="flex items-center">
-<img src="assets/logos/jjcollege.png" class="w-8 h-8 mr-3 object-contain">
-<p class="text-sm">
-B.E – Electronics & Communication Engineering – J.J. College of Engineering & Technology (2011–2015)
-</p>
-</div>
-</div>
-
-<!-- Certifications -->
-<div>
-<h3 class="font-bold mb-4 tracking-wide">COURSES & CERTIFICATIONS</h3>
-
-<div class="flex items-center mb-3">
-<img src="assets/logos/iimcalcutta.png" class="w-6 h-6 mr-2 object-contain">
-<p class="text-sm">AI Powered Marketing – IIM Calcutta (ML fundamentals)</p>
-</div>
-
-<div class="flex items-center mb-3">
-<img src="assets/logos/udacity.png" class="w-6 h-6 mr-2 object-contain">
-<p class="text-sm">AI Product Management – Udacity (Dataset creation, model evaluation)</p>
-</div>
-
-<div class="flex items-center mb-3">
-<img src="assets/logos/growthx.png" class="w-6 h-6 mr-2 object-contain">
-<p class="text-sm">Product Growth – GrowthX (Scaled MAU 100K → 500K)</p>
-</div>
-
-<div class="flex items-center">
-<img src="assets/logos/pmcurve.png" class="w-6 h-6 mr-2 object-contain">
-<p class="text-sm">PM Curve (Product Strategy & Tech for PMs)</p>
-</div>
-
-</div>
-
-<div>
-<h3 class="font-bold mb-4 tracking-wide">HONOUR AWARDS</h3>
-<ul class="text-sm space-y-2">
-<li>Rookie Award, Outstanding Performer & Game Changer – LetsTransport (2021–Present)</li>
-<li>Best Product Marketing Company – Zee Business & Ministry of India (2019)</li>
-</ul>
-</div>
-
-<div>
-<h3 class="font-bold mb-4 tracking-wide">LANGUAGES</h3>
-<p class="text-sm">
-English – Full Professional | Tamil – Native | Telugu – Elementary
-</p>
-</div>
-
-</div>
-
 </section>
+
+<!-- EDUCATION -->
+<section id="education" class="mt-20" data-aos="fade-up">
+<h2 class="text-2xl font-bold mb-6">Education</h2>
+<p class="text-sm">MBA – Sairam Institute of Management Studies</p>
+<p class="text-sm">B.E – J.J. College of Engineering & Technology</p>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="mt-20" data-aos="fade-up">
+<h2 class="text-2xl font-bold mb-6">Courses & Certifications</h2>
+
+<div class="space-y-4 text-sm">
+<div class="flex items-center">
+<img src="assets/logos/iimcalcutta.png" class="w-6 h-6 mr-2">
+AI Powered Marketing – IIM Calcutta
+</div>
+
+<div class="flex items-center">
+<img src="assets/logos/udacity.png" class="w-6 h-6 mr-2">
+AI Product Management – Udacity
+</div>
+
+<div class="flex items-center">
+<img src="assets/logos/growthx.png" class="w-6 h-6 mr-2">
+GrowthX – Product Growth
+</div>
+
+<div class="flex items-center">
+<img src="assets/logos/pmcurve.png" class="w-6 h-6 mr-2">
+PM Curve – Product Strategy
+</div>
+</div>
+</section>
+
+</div>
+</div>
 
 </body>
 </html>
