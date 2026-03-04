@@ -27,6 +27,16 @@ body { font-family: ui-sans-serif, system-ui; }
 
 <script>
 window.onload = () => { AOS.init({ once: true }); }
+
+// Visitor Counter
+if(localStorage.page_view){
+  localStorage.page_view = Number(localStorage.page_view)+1;
+} else {
+  localStorage.page_view = 1;
+}
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("counter").innerText = localStorage.page_view;
+});
 </script>
 
 <!-- DARK MODE BUTTON -->
@@ -34,6 +44,11 @@ window.onload = () => { AOS.init({ once: true }); }
 class="fixed top-6 right-6 z-50 bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-full text-sm shadow-lg no-print">
 Toggle Theme
 </button>
+
+<!-- VISITOR COUNTER -->
+<div class="fixed bottom-6 right-6 text-xs bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded shadow no-print">
+Visitors: <span id="counter">0</span>
+</div>
 
 <div class="flex max-w-7xl mx-auto">
 
@@ -64,7 +79,7 @@ Bengaluru, India • durairaj6893@gmail.com • 9791725973
 </div>
 
 <div class="mt-6">
-<a href="Durairaju_SPM_Resume.pdf" download
+<a href="./Durairaju_SPM_Resume.pdf" target="_blank"
 class="px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded no-print">
 Download PDF
 </a>
@@ -85,10 +100,8 @@ Download PDF
 </div>
 </div>
 
-<!-- Timeline -->
 <div class="border-l-2 border-gray-300 dark:border-gray-600 pl-6 space-y-12">
 
-<!-- Senior PM -->
 <div data-aos="fade-up">
 <h3 class="font-semibold text-lg">Senior Product Manager (Apr 2024 – Present)</h3>
 <ul class="list-disc pl-6 mt-3 text-sm space-y-2">
@@ -107,7 +120,6 @@ Download PDF
 </div>
 </div>
 
-<!-- Growth PM -->
 <div data-aos="fade-up">
 <h3 class="font-semibold text-lg">Growth Product Manager (Jul 2021 – Mar 2024)</h3>
 <ul class="list-disc pl-6 mt-3 text-sm space-y-2">
@@ -159,11 +171,20 @@ Download PDF
 </ul>
 </section>
 
-<!-- EDUCATION -->
+<!-- EDUCATION (WITH LOGOS ADDED) -->
 <section id="education" class="mt-20" data-aos="fade-up">
 <h2 class="text-2xl font-bold mb-6">Education</h2>
+
+<div class="flex items-center mb-6">
+<img src="assets/logos/sairam.png" class="w-10 h-10 mr-4 object-contain">
 <p class="text-sm">MBA – Sairam Institute of Management Studies</p>
+</div>
+
+<div class="flex items-center">
+<img src="assets/logos/jjcollege.png" class="w-10 h-10 mr-4 object-contain">
 <p class="text-sm">B.E – J.J. College of Engineering & Technology</p>
+</div>
+
 </section>
 
 <!-- COURSES -->
