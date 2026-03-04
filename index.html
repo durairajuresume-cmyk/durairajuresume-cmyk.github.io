@@ -10,29 +10,20 @@
 tailwind.config = { darkMode: 'class' }
 </script>
 
-<!-- Google Analytics -->
-<!-- Replace G-XXXXXXXXXX with your actual ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
-
 <style>
 @media print {
   .no-print { display: none; }
 }
 </style>
+
 </head>
 
 <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-200 transition duration-500">
 
-<!-- Dark Toggle -->
+<!-- Dark Mode Toggle -->
 <button onclick="document.documentElement.classList.toggle('dark')"
 class="fixed top-6 right-6 z-50 bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-full text-sm shadow no-print">
-Theme
+Toggle Theme
 </button>
 
 <!-- Visitor Counter -->
@@ -51,46 +42,86 @@ document.getElementById("counter").innerText = localStorage.page_view;
 
 <div class="max-w-6xl mx-auto px-6 py-14">
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section>
 <h1 class="text-5xl font-bold tracking-tight">Durairaju K</h1>
+
 <p class="mt-4 text-xl text-gray-600 dark:text-gray-400">
-Product Leader | Marketplace, Logistics & AI-Driven Platforms
+Product Leader | Marketplace, Logistics & AI Platforms
 </p>
+
 <p class="mt-4 max-w-3xl text-sm leading-relaxed">
-I build scalable two-sided platforms, reduce infrastructure cost at scale,
-and lead product organizations that align technology with business outcomes.
+I build scalable two-sided marketplaces, optimize infrastructure cost at scale,
+and align product, engineering, and business to drive measurable outcomes.
 </p>
+
+<div class="mt-6">
+<a href="./Durairaju_SPM_Resume.pdf"
+   target="_blank"
+   class="px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded no-print">
+   Download Resume (PDF)
+</a>
+</div>
+
 </section>
 
 <!-- LETSTRANSPORT -->
 <section class="mt-20">
-<h2 class="text-2xl font-bold mb-6">LetsTransport</h2>
 
-<div class="border-l-2 pl-6 space-y-12">
-
+<div class="flex items-center mb-8">
+<a href="https://letstransport.in/" target="_blank">
+<img src="assets/logos/letstransport.png" class="w-14 h-14 mr-4 object-contain">
+</a>
 <div>
-<h3 class="font-semibold text-lg">Senior Product Manager (2024–Present)</h3>
-<ul class="list-disc pl-6 text-sm space-y-2 mt-3">
-<li>Scaled Loadster marketplace to 10K+ drivers.</li>
-<li>Reduced Google Maps cost by 99%.</li>
-<li>Built real-time tracking & payment visibility systems.</li>
-</ul>
-<a href="case-loadster.html" class="underline text-sm mt-2 inline-block">
-View Detailed Case Study →
+<h2 class="text-2xl font-bold">LetsTransport</h2>
+<a href="https://letstransport.in/" target="_blank" class="underline text-sm">
+letstransport.in
 </a>
 </div>
+</div>
 
+<div class="border-l-2 border-gray-300 dark:border-gray-700 pl-6 space-y-12">
+
+<!-- Senior PM -->
 <div>
-<h3 class="font-semibold text-lg">Growth Product Manager (2021–2024)</h3>
+<h3 class="font-semibold text-lg">Senior Product Manager (Apr 2024 – Present)</h3>
+
 <ul class="list-disc pl-6 text-sm space-y-2 mt-3">
-<li>Reduced DSO by 20 days via OMS.</li>
-<li>Improved pricing win-rate by 23%.</li>
-<li>Improved partner activation 34% → 65%.</li>
+<li>Launched Loadster dual-app marketplace (10K+ drivers in 6 months).</li>
+<li>Reduced Google Maps API cost by 99% via routing redesign.</li>
+<li>Built real-time tracking & payment visibility systems.</li>
+<li>Led AI-assisted prototyping and rapid MVP development.</li>
 </ul>
-<a href="case-growth.html" class="underline text-sm mt-2 inline-block">
+
+<div class="mt-4 text-sm space-y-1">
+<p class="font-semibold">Applications:</p>
+<a href="https://play.google.com/store/apps/details?id=com.loadster.customer" target="_blank" class="underline block">Loadster – Android</a>
+<a href="https://apps.apple.com/in/app/loadster-logistics-service/id6745955520" target="_blank" class="underline block">Loadster – iOS</a>
+<a href="https://play.google.com/store/apps/details?id=com.loadster.champion" target="_blank" class="underline block">Loadster Champion</a>
+<a href="https://play.google.com/store/apps/details?id=in.letstransport.supply" target="_blank" class="underline block">LetsTransport Partner</a>
+</div>
+
+<a href="case-loadster.html" class="underline text-sm mt-3 inline-block">
+View Detailed Case Study →
+</a>
+
+</div>
+
+<!-- Growth PM -->
+<div>
+<h3 class="font-semibold text-lg">Growth Product Manager (Jul 2021 – Mar 2024)</h3>
+
+<ul class="list-disc pl-6 text-sm space-y-2 mt-3">
+<li>Built Order Management System reducing DSO by 20 days.</li>
+<li>Improved pricing win rate by 23%.</li>
+<li>Improved partner activation from 34% → 65%.</li>
+<li>Built automated FLP-based tracking MIS system.</li>
+</ul>
+
+<a href="case-growth.html" class="underline text-sm mt-3 inline-block">
 View Growth Case Study →
 </a>
+
 </div>
 
 </div>
@@ -98,37 +129,63 @@ View Growth Case Study →
 
 <!-- WEBBOOMBAA -->
 <section class="mt-20">
-<h2 class="text-2xl font-bold mb-6">Webboombaa</h2>
-<p class="text-sm">
-Co-Founder & Head of Product (2016–2021)
-</p>
+
+<div class="flex items-center mb-6">
+<a href="https://webboombaa.com/" target="_blank">
+<img src="assets/logos/webboombaa.png" class="w-14 h-14 mr-4 object-contain">
+</a>
+<div>
+<h2 class="text-2xl font-bold">Webboombaa</h2>
 <a href="https://webboombaa.com/" target="_blank" class="underline text-sm">
 webboombaa.com
 </a>
+</div>
+</div>
+
+<p class="text-sm mb-4">
+Co-Founder & Head of Product (2016 – 2021)
+</p>
+
+<ul class="list-disc pl-6 text-sm space-y-2">
+<li>Scaled to ₹3 Cr ARR and led acquisition.</li>
+<li>Built MVP growth loops across 15+ industries.</li>
+<li>Led cross-functional team of 15 members.</li>
+</ul>
+
 </section>
 
-<!-- EDUCATION WITH LOGOS -->
+<!-- EDUCATION -->
 <section class="mt-20">
-<h2 class="text-2xl font-bold mb-6">Education</h2>
 
-<div class="flex items-center mb-6">
-<img src="assets/logos/sairam.png" class="w-10 h-10 mr-4">
+<h2 class="text-2xl font-bold mb-8">Education</h2>
+
+<div class="flex items-center mb-8">
+<img src="assets/logos/sairam.png" class="w-12 h-12 mr-4 object-contain">
 <div>
-<p class="font-semibold text-sm">MBA – Sairam Institute of Management Studies</p>
-<p class="text-xs text-gray-500">Marketing & Operations</p>
+<p class="font-semibold text-sm">
+MBA – Sairam Institute of Management Studies
+</p>
+<p class="text-xs text-gray-500">
+Marketing & Operations (2015–2017)
+</p>
 </div>
 </div>
 
 <div class="flex items-center">
-<img src="assets/logos/jjcollege.png" class="w-10 h-10 mr-4">
+<img src="assets/logos/jjcollege.png" class="w-12 h-12 mr-4 object-contain">
 <div>
-<p class="font-semibold text-sm">B.E – J.J. College of Engineering & Technology</p>
-<p class="text-xs text-gray-500">Electronics & Communication</p>
+<p class="font-semibold text-sm">
+B.E – J.J. College of Engineering & Technology
+</p>
+<p class="text-xs text-gray-500">
+Electronics & Communication (2011–2015)
+</p>
 </div>
 </div>
 
 </section>
 
 </div>
+
 </body>
 </html>
