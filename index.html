@@ -6,50 +6,34 @@
   <title>Durairaju K | Senior Product Manager</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
+    tailwind.config = { darkMode: 'class' }
   </script>
-  <style>
-    .fade-in {
-      animation: fadeIn 1.2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </head>
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition duration-500">
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition duration-500">
 
-<!-- Dark Mode Toggle -->
-<div class="fixed top-5 right-5">
-  <button onclick="document.documentElement.classList.toggle('dark')" 
-    class="px-3 py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm">
-    Toggle Mode
-  </button>
-</div>
-
-<!-- Hero Section -->
-<section class="max-w-4xl mx-auto px-6 py-20 fade-in">
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">Durairaju K</h1>
-  <p class="text-xl font-medium mb-4">
+<!-- HEADER -->
+<section class="max-w-6xl mx-auto px-6 py-16 text-center border-b border-gray-300">
+  <h1 class="text-4xl md:text-5xl font-bold tracking-wide">DURAIRAJU K</h1>
+  <p class="mt-4 text-lg">
     Senior Product Manager | Marketplace & Logistics Platforms
   </p>
-  <p class="mb-6">
+  <p class="mt-2 text-sm">
     Bengaluru, India | durairaj6893@gmail.com | 9791725973 |
     <a href="https://linkedin.com/in/durairaju" class="underline">LinkedIn</a>
   </p>
-  <a href="Durairaju_SPM_Resume.pdf" download
-    class="inline-block bg-black text-white dark:bg-white dark:text-black px-6 py-3 rounded-lg">
-    Download Resume (PDF)
-  </a>
+
+  <div class="mt-6">
+    <a href="Durairaju_SPM_Resume.pdf" download
+       class="px-6 py-2 bg-black text-white dark:bg-white dark:text-black rounded">
+       Download Resume (PDF)
+    </a>
+  </div>
 </section>
 
-<!-- Professional Summary -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Professional Summary</h2>
+<!-- EXECUTIVE SUMMARY -->
+<section class="max-w-6xl mx-auto px-6 py-10 border-b border-gray-300">
+  <h2 class="text-xl font-bold mb-4 tracking-wide">EXECUTIVE SUMMARY</h2>
   <p class="leading-relaxed whitespace-pre-line">
 Senior Product Manager with 9+ years of experience across B2B/B2C marketplaces, logistics
 platforms, and founder-led product development. Strong expertise in AI-assisted product discovery,
@@ -59,124 +43,122 @@ measurable business impact.
   </p>
 </section>
 
-<!-- Work Experience -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-8">Work Experience</h2>
+<!-- TWO COLUMN LAYOUT -->
+<section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-4 gap-10">
 
-  <div class="mb-10">
-    <h3 class="text-xl font-semibold">Senior Product Manager – LetsTransport (Apr 2024 – Present)</h3>
-    <ul class="list-disc pl-6 mt-4 space-y-2">
-      <li>Led launch of dual-app logistics marketplace platform Loadster; scaled to 10K+ drivers and 5K+ users within 6 months.</li>
-      <li>Solved major cost-scaling issue by optimizing routing workflows, driving 99%+ reduction in Google Maps API usage.</li>
-      <li>Reduced dependency on real-time routing achieving 100x drop in mapping API calls.</li>
-      <li>Built real-time tracking and payment visibility systems improving partner adoption by 15%.</li>
-      <li>Leveraged AI-assisted prototyping tools (Figma Make, Stitch).</li>
-      <li>Built MVPs using V0 and Lovable before engineering scale-up.</li>
-      <li>Used Supabase and GitLab CI/CD for streamlined deployments.</li>
-    </ul>
+  <!-- LEFT COLUMN (3/4) -->
+  <div class="col-span-4 md:col-span-3">
+
+    <h2 class="text-xl font-bold mb-8 tracking-wide">PROFESSIONAL EXPERIENCE</h2>
+
+    <!-- LetsTransport -->
+    <div class="mb-12">
+      <div class="flex items-center mb-4">
+        <img src="assets/logos/letstransport.png" class="w-12 h-12 mr-4">
+        <div>
+          <h3 class="font-semibold text-lg">
+            Senior Product Manager – LetsTransport (Apr 2024 – Present)
+          </h3>
+        </div>
+      </div>
+
+      <ul class="list-disc pl-8 space-y-2 text-sm">
+        <li>Led launch of dual-app logistics marketplace platform Loadster; scaled to 10K+ drivers and 5K+ users within 6 months.</li>
+        <li>Solved major cost-scaling issue by optimizing routing workflows, driving 99%+ reduction in Google Maps API usage.</li>
+        <li>Reduced dependency on real-time routing achieving 100x drop in mapping API calls.</li>
+        <li>Built real-time tracking and payment visibility systems improving partner adoption by 15%.</li>
+        <li>Leveraged AI-assisted prototyping tools (Figma Make, Stitch).</li>
+        <li>Built MVPs using V0 and Lovable before engineering scale-up.</li>
+        <li>Used Supabase and GitLab CI/CD for streamlined deployments.</li>
+      </ul>
+    </div>
+
+    <!-- Growth PM -->
+    <div class="mb-12">
+      <div class="flex items-center mb-4">
+        <img src="assets/logos/letstransport.png" class="w-12 h-12 mr-4">
+        <h3 class="font-semibold text-lg">
+          Growth Product Manager – LetsTransport (Jul 2021 – Mar 2024)
+        </h3>
+      </div>
+
+      <ul class="list-disc pl-8 space-y-2 text-sm">
+        <li>Built Order Management System reducing unbilled DSO by 20 days.</li>
+        <li>Created pricing model improving win rate by 23%.</li>
+        <li>Improved partner activation from 34% to 65%.</li>
+        <li>Built automated MIS using Android Fused Location Provider (FLP) and haversine distance computation with fraud safeguards.</li>
+      </ul>
+    </div>
+
+    <!-- Webboombaa -->
+    <div>
+      <div class="flex items-center mb-4">
+        <img src="assets/logos/webboombaa.png" class="w-12 h-12 mr-4">
+        <h3 class="font-semibold text-lg">
+          Co-Founder & Head of Product – Webboombaa (Jun 2016 – Jun 2021)
+        </h3>
+      </div>
+
+      <ul class="list-disc pl-8 space-y-2 text-sm">
+        <li>Scaled product marketing agency to ₹3 Cr ARR and led acquisition.</li>
+        <li>Built MVPs and scaled user activation & retention across clients.</li>
+        <li>Led marketing campaigns across 15+ industries.</li>
+        <li>Managed cross-functional team of 15 across Product, Marketing & Sales.</li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="mb-10">
-    <h3 class="text-xl font-semibold">Growth Product Manager – LetsTransport (Jul 2021 – Mar 2024)</h3>
-    <ul class="list-disc pl-6 mt-4 space-y-2">
-      <li>Built Order Management System reducing unbilled DSO by 20 days.</li>
-      <li>Created pricing model improving win rate by 23%.</li>
-      <li>Improved partner activation from 34% to 65%.</li>
-      <li>Built automated MIS using Android Fused Location Provider (FLP) and haversine distance computation with fraud safeguards.</li>
-    </ul>
+  <!-- RIGHT COLUMN (1/4) -->
+  <div class="col-span-4 md:col-span-1 space-y-10">
+
+    <div>
+      <h3 class="font-bold mb-4">EDUCATION</h3>
+
+      <div class="flex items-center mb-3">
+        <img src="assets/logos/sairam.png" class="w-8 h-8 mr-3">
+        <p class="text-sm">
+          MBA (Marketing & Operations) – Sairam Institute of Management Studies (2015–2017)
+        </p>
+      </div>
+
+      <div class="flex items-center">
+        <img src="assets/logos/jjcollege.png" class="w-8 h-8 mr-3">
+        <p class="text-sm">
+          B.E – Electronics & Communication Engineering – J.J. College of Engineering & Technology (2011–2015)
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">COURSES & CERTIFICATIONS</h3>
+
+      <ul class="text-sm space-y-3">
+        <li>Product Growth – GrowthX (Scaled MAU 100K → 500K)</li>
+        <li>AI Product Management – Udacity (Dataset creation, model evaluation)</li>
+        <li>AI Powered Marketing – IIM Calcutta (ML fundamentals)</li>
+        <li>PM Curve (Product Strategy & Tech for PMs)</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">HONOUR AWARDS</h3>
+      <ul class="text-sm space-y-2">
+        <li>Rookie Award, Outstanding Performer & Game Changer – LetsTransport (2021–Present)</li>
+        <li>Best Product Marketing Company – Zee Business & Ministry of India (2019)</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">LANGUAGES</h3>
+      <p class="text-sm">
+        English – Full Professional | Tamil – Native | Telugu – Elementary
+      </p>
+    </div>
+
   </div>
 
-  <div>
-    <h3 class="text-xl font-semibold">Co-Founder & Head of Product – Webboombaa (Jun 2016 – Jun 2021)</h3>
-    <ul class="list-disc pl-6 mt-4 space-y-2">
-      <li>Scaled product marketing agency to ₹3 Cr ARR and led acquisition.</li>
-      <li>Built MVPs and scaled user activation & retention across clients.</li>
-      <li>Led marketing campaigns across 15+ industries.</li>
-      <li>Managed cross-functional team of 15 across Product, Marketing & Sales.</li>
-    </ul>
-  </div>
 </section>
-
-<!-- Case Studies -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-8">Selected Case Studies</h2>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold">Loadster Marketplace Scale</h3>
-    <p class="mt-2">
-      Built and launched dual-app marketplace architecture solving two-sided supply-demand imbalance.
-      Designed activation loops and operational visibility systems resulting in 10K+ drivers and 5K+ users in 6 months.
-    </p>
-  </div>
-
-  <div class="mb-8">
-    <h3 class="text-xl font-semibold">99% Google Maps Cost Optimization</h3>
-    <p class="mt-2">
-      Identified unsustainable API scaling costs. Re-architected routing workflows by removing heavy real-time dependency,
-      resulting in 100x drop in API calls and 99%+ cost reduction.
-    </p>
-  </div>
-</section>
-
-<!-- AI & Marketplace Deep Dive -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">AI & Marketplace Deep Dive</h2>
-  <p class="leading-relaxed">
-    Designed rule-based and predictive decision systems for marketplace optimization including routing efficiency,
-    fraud safeguards, pricing experimentation, and activation funnel improvements.
-    Leveraged AI-assisted rapid prototyping tools (Figma Make, Stitch, V0, Lovable) to accelerate MVP cycles
-    before engineering scale-up. Strong focus on infrastructure cost control, experimentation frameworks,
-    and scalable backend systems.
-  </p>
-</section>
-
-<!-- Skills -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Skills & Tools</h2>
-  <p>
-AI & Marketplace Systems: Rule-based & predictive decision systems, Figma Make, Stitch, V0, Lovable.<br><br>
-Backend & Infra: Supabase, GitLab CI/CD, GCP, Cloud SQL, Kubernetes, Docker, Nginx.<br><br>
-Analytics & Growth: GA4, BigQuery, Amplitude, MoEngage, Funnel optimization, Pricing experiments.<br><br>
-PM Tools: JIRA, Confluence, Figma, Postman, Site24x7.
-  </p>
-</section>
-
-<!-- Education -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Education</h2>
-  <p>MBA (Marketing & Operations) – Sairam Institute of Management Studies (2015–2017)</p>
-  <p>B.E – Electronics & Communication Engineering – J.J. College of Engineering & Technology (2011–2015)</p>
-</section>
-
-<!-- Certifications -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Courses & Certifications</h2>
-  <ul class="list-disc pl-6 space-y-2">
-    <li>Product Growth – GrowthX (Scaled MAU 100K → 500K)</li>
-    <li>AI Product Management – Udacity (Dataset creation, model evaluation)</li>
-    <li>AI Powered Marketing – IIM Calcutta (ML fundamentals)</li>
-    <li>PM Curve (Product Strategy & Tech for PMs)</li>
-  </ul>
-</section>
-
-<!-- Awards -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Honour Awards</h2>
-  <ul class="list-disc pl-6 space-y-2">
-    <li>Rookie Award, Outstanding Performer & Game Changer – LetsTransport (2021–Present)</li>
-    <li>Best Product Marketing Company – Zee Business & Ministry of India (2019)</li>
-  </ul>
-</section>
-
-<!-- Languages -->
-<section class="max-w-4xl mx-auto px-6 py-12 fade-in">
-  <h2 class="text-2xl font-bold mb-6">Languages</h2>
-  <p>English – Full Professional | Tamil – Native | Telugu – Elementary</p>
-</section>
-
-<footer class="text-center py-10 text-sm opacity-70">
-  © 2026 Durairaju K
-</footer>
 
 </body>
 </html>
